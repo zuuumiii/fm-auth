@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/app
+    command: tail -f /dev/null
+    environment:
+      CLARIS_ID: ${CLARIS_ID}
+      CLARIS_PASS: ${CLARIS_PASS}
+      REFRESH_TOKEN: ${REFRESH_TOKEN}
+    working_dir: /var/app
