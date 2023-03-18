@@ -9,7 +9,7 @@ FileMaker Data API を利用するために必要な **FMID** を取得できま
 `doker-compose run node npm install`
 
 - 環境変数の設定
-`.env`ファイルをfmAuthディレクトリに作成
+`.env`ファイルをfm-authディレクトリに作成
 ```
 export CLARIS_ID=hoge.fuga.@gmial.com # FilemakerのID
 export CLARIS_PASS=password # Filemakerのパスワード
